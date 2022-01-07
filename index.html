@@ -8,7 +8,27 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <script src="script.js"></script>
+	<!-- Header -->
+	<secion id="header">
+		<div class = "header container">
+			<div class="nav-bar">
+				<div class="brand">
+					<a href="#hero"><h1><span>M</span>itchell <span>S</span>harma</h1></a>
+				</div>
+				<div class="nav-list">
+					<div class="hamburger"><div class="bar"></div></div>
+					<ul>
+						<li><a href="#hero" data-after="Home">Home</a></li>
+						<li><a href="#recent" data-after="Recent">Recent Posts</a></li>
+						<li><a href="#about" data-after="About">About</a></li>
+						<li><a href="https://mitchellsharma.com" data-after="Portfolio">Portfolio</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</secion>
+	<!-- End of Header -->
+	
 	<!-- Hero Section -->
 	<section id="hero">
 		<div class="hero container">
@@ -53,5 +73,46 @@
 	</section>
 	<!-- End of Recent Posts Section -->
 
+	<!-- About Section -->
+	<section id="about">
+		<div class="about container">
+			<div class="col-left">
+				<div class="about-img">
+					<img src="./img/mee.jpg" alt="img">
+				</div>
+			</div>
+			<div class="col-right">
+				<class class="section-title">About <span>Me</span></class>
+				<h2>Aspiring Software Engineer</h2>
+				<p>Greetings! First of all, thank you for taking the time to visit my website. As you may have read above, my name is Mitchell and I'm an aspiring software engineer from Houston, Texas. I'm currently a sophomore at the University of Houston with a major in Computer Science and a minor in Mathematics, planning to graduate in May 2024.</p>
+				<p>As of writing this (in January 2022), I've just finished my sophomore-level CS classes, and I'm feeling ready to contribute what I've learned thus far to a real-world project. I'm currently working on a number of personal projects which you can read about <a href="#projects">above</a>, or on my <a href="https://github.com/SharmaMitchell">GitHub page</a>. </p>
+				<p>As you may gather from my projects and working experience, I have a passion for education - especically langauge learning. Since I started self-studying Japanese as a teenager, I've developed a deep interest in linguistic education. That interest has influenced me as a programmer as well, and inspired me to create a number of language-related projects including a <a href="https://github.com/SharmaMitchell/TranslatorDiscordBot">translator Discord bot</a>, and a <a href="https://github.com/SharmaMitchell/PythonSRS">spaced repetition system</a>. </p>
+				<p>In the future, I hope to continue working on meaningful projects to solve problems, contribute to positive causes, and help people achieve their goals. </p>
+				<a href="https://mitchellsharma.com" class="cta">View Portfolio</a>
+			</div>
+		</div>
+	</section>
+	<!-- End of About Section -->
+
+	<!-- Footer -->
+	<section id="footer">
+		<div class="footer container">
+		<div class="brand">
+			<h1><span>M</span>itchell <span>S</span>harma</h1>
+		</div>
+		<h2>Aspiring Software Engineer</h2>
+		<div class="social-icon">
+			<div class="social-item">
+			<a href="https://www.linkedin.com/in/mitchell-sharma/"><img src="./img/linkedin.png" /></a>
+			</div>
+			<div class="social-item">
+			<a href="https://github.com/SharmaMitchell"><img src="./img/github.png" /></a>
+			</div>
+		</div>
+		<p>Copyright © 2022 Mitchell Sharma. All rights reserved</p>
+		</div>
+	</section>
+	<!-- End Footer -->
+	<script src="script.js"></script>
   </body>
 </html>
