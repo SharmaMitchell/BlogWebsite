@@ -35,7 +35,7 @@ img{
 
 p{
 	color: black;
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	margin-top: 5px;
 	line-height: 2.5rem;
 	font-weight: 300px;
@@ -43,7 +43,7 @@ p{
 }
 
 .section-title{
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: 300;
 	color: black;
 	margin-bottom: 10px;
@@ -74,11 +74,12 @@ p{
 	background-color: crimson;
 }
 .brand h1{
-	font-size: 3rem;
+	font-size: 0rem;
 	text-transform: uppercase;
-	color: white;
+	color: transparent;
 }
 .brand h1 span{
+	font-size: 3rem;
 	color: crimson;
 }
 
@@ -175,7 +176,6 @@ p{
 	width: 100%;
 	border-radius: 50%;
 	border: 3px solid white;
-	animation: hamburger_pulse 1s ease infinite;
 }
 #header .hamburger .bar {
 	height: 2px;
@@ -265,106 +265,66 @@ p{
 	animation: text_reveal .75s ease forwards;
 	animation-delay: 1.3s;
 }
+#preview .date{
+	animation-delay: 1.8s;
+}
 /* End of Preview Section */
 
-/* Recent Section */
-#recent .recent{
-	flex-direction: column;
-	text-align: center;
-	max-width: 1500px;
-	margin: 0 auto;
-	padding: 100px 0;
-}
-#recent .recent-top{
-	max-width: 500px;
-	margin: 0 auto;
-}
-#recent .container .recent-top p{
-	font-size: 1.8rem;
-}
-#recent .recent-bottom{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 50px;
-}
-#recent .recent-item{
-	flex-basis: 80%;
-	display: flex;
-	max-width: 480px;
-	align-items: flex-start;
-	justify-content: center;
-	flex-direction: column;
-	padding: 30px;
-	border-radius: 10px;
-	background-image: linear-gradient(60deg, #2c1c1c 0%, #5e4242 100%);
-	margin: 10px 5%;
-	position: relative;
-}
-#recent .recent-item h2{
-	color: white;
-	font-size: 2rem;
-	text-align: left;
-	margin-bottom: 10px;
-	text-transform: uppercase;
-}
-#recent .recent-item p{
-	color: white;
-	text-align: left;
-}
-/* End of Recent Section */
-
-/* About Section */
-#about .about{
+/* Paragraph section */
+#paragraph .paragraph{
 	flex-direction: column-reverse;
-	text-align: center;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 100px 20px;
 }
-#about .col-left {
-	width: 250px;
-	height: 360px;
+#paragraph .col-left{
+	
 }
-#about .col-right {
-	width: 100%;
+#paragraph .col-right{
+	text-align: left;
+	width:100%;
 }
-#about .col-right h2 {
+#paragraph .col-right h2 {
 	font-size: 1.8rem;
 	font-weight: 500;
 	letter-spacing: 0.2rem;
 	margin-bottom: 10px;
 }
-#about .col-right p {
+#paragraph .col-right p{
 	margin-bottom: 20px;
 }
-#about .col-right p a {
+#paragraph .col-right p a {
 	color: crimson;
 }
-#about .col-right .cta {
+#paragraph .col-right .cta {
 	color: black;
 	margin-bottom: 50px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
-#about .col-left .about-img {
+#paragraph .col-left .post-img{
 	height: 100%;
 	width: 100%;
 	position: relative;
 	border: 10px solid white;
+	background-color: white;
 }
-#about .col-left .about-img::after {
+#paragraph .col-left .post-img::after{
 	content: '';
 	position: absolute;
-	left: -33px;
+	left: -20px;
 	top: 19px;
 	height: 98%;
 	width: 98%;
-	border: 7px solid crimson;
+	border: 8px solid crimson;
 	z-index: -1;
 }
-/* End of About Section */
+#paragraph .col-left .img-div{
+	content: '';
+	color: transparent;
+	margin: 40px;
+}
+/* End of Paragraph section */
 
 /* Footer */
 #footer {
@@ -439,54 +399,13 @@ p{
 }
 /* End of Keyframes */
 
-
-/* Media Query For Tablet */
-@media only screen and (min-width: 768px) {
-	.cta {
-		font-size: 2.5rem;
-		padding: 20px 60px;
-	}
-	h1.section-title {
-		font-size: 6rem;
-	}
-
-	/* Preview Section */
-	#preview h1 {
-		font-size: 5rem;
-	}
-	/* End of Preview Section */
-
-	/* About Section */
-	#about .about {
-		flex-direction: row;
-	}
-	#about .col-left {
-		width: 600px;
-		height: 400px;
-		padding-left: 60px;
-	}
-	#about .about .col-left .about-img::after {
-		left: -45px;
-		top: 34px;
-		height: 98%;
-		width: 98%;
-		border: 10px solid crimson;
-	}
-	#about .col-right {
-		text-align: left;
-		padding: 30px;
-	}
-	#about .col-right h1 {
-		text-align: left;
-	}
-	/* End of About Section */
-
-}
-/* End Media Query For Tablet */
-
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
+	.brand h1{
+		font-size: 3rem;
+		color: white;
+	}
 	#header .hamburger {
 		display: none;
 	}
@@ -508,6 +427,30 @@ p{
 	}
 	/* End header */
 
+	/* Paragraph */
+	#paragraph .paragraph{
+		flex-direction: row;
+	}
+	#paragraph .col-left {
+		width: 600px;
+		height: 100%;
+		padding-left: 60px;
+	}
+	#paragraph .col-left .post-img::after{
+		left: -35px;
+		top: 24px;
+		height: 98%;
+		width: 98%;
+		border: 10px solid crimson;
+	}
+	#paragraph .col-right {
+		text-align: left;
+		padding: 30px;
+	}
+	#paragraph .col-right h1 {
+		text-align: left;
+	}
+	/* End Paragraph */
 	
 }
 /* End  Media Query For Desktop */
