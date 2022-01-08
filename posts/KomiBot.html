@@ -71,7 +71,8 @@
 				<p>Thinking that the 'alpha' in 'alpha-numeric', and by extension 'isalnum', was in reference to the alphabet, I had assumed that 'isalnum' would evaluate to <b>false</b> if given Japanese text. But I quickly realized that this was not the case, as my Japanese test messages started coming back the same - since they were being sent to DeepL as English to be translated into Japanese. </p>
 				<p>After spending some time on StackOverflow, and deliberating on my options, I decided to implement a check for the input lanugage by using the python function 'isascii()' to determine if the input could be represented by the ascii character set. It wasn't a perfect solution, since emojis and other special characters would cause English input to be sent as Japanese, but it saved me a wasted API call or an additional dependency to check the language, so I figured it was worth the trade-off. Given that the main purpose of the bot is to translate Japanese into English, I'm satisfied with this solution. </p>
 				<class class="section-title">The <span>Payoff</span></class>
-				<p>With my desired features implemented and my bot up-and-running, it was time to exhibit my bot. I excitedly informed the Japanese server I mentioned above that I had made a discord bot that translates! </p>
+				<p>With my desired features implemented and my bot up-and-running, it was time to exhibit my bot. I excitedly informed the Japanese server I mentioned above that I had made a discord bot that translates, in hopes to help beginners follow the Japanese-only chat. As of writing this I'm currently awaiting approval from the server admins for the bot to join the server, but I have high hopes that KomiBot will be helping people very soon. </p>
+				<a href="https://github.com/SharmaMitchell/TranslatorDiscordBot" class="cta">View on GitHub</a>
 			</div>
 		</div>
 	</section>

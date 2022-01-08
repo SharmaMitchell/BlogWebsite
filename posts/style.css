@@ -65,7 +65,7 @@ p{
 	font-size: 2rem;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
-	margin-top: 30px;
+	margin-top: 20px;
 	transition: 0.3s ease;
 	transition-property: background-color, color;
 }
@@ -298,7 +298,7 @@ p{
 }
 #paragraph .col-right .cta {
 	color: black;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 	padding: 10px 20px;
 	font-size: 2rem;
 }
