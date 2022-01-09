@@ -298,9 +298,11 @@ p{
 	flex-direction: column;
 	padding: 30px;
 	border-radius: 10px;
-	background-image: linear-gradient(60deg, #2c1c1c 0%, #5e4242 100%);
+	background-image: url(./img/Code-banner.png);
+	background-size: cover;
 	margin: 10px 5%;
 	position: relative;
+	overflow: hidden;
 }
 #recent .recent-item h2{
 	color: white;
@@ -312,6 +314,10 @@ p{
 #recent .recent-item p{
 	color: white;
 	text-align: left;
+}
+#recent .recent-item .cta{
+	font-size: 2rem;
+	padding: 10px 20px;
 }
 /* End of Recent Section */
 
@@ -442,10 +448,6 @@ p{
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
-	.cta {
-		font-size: 2.5rem;
-		padding: 20px 60px;
-	}
 	h1.section-title {
 		font-size: 6rem;
 	}

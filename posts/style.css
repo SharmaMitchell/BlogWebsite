@@ -336,6 +336,10 @@ p{
 	padding-top: 50px;
 	padding-bottom: 10px;
 }
+#footer .brand h1{
+	font-size: 3rem;
+	color: white;
+}
 #footer h2 {
 	color: white;
 	font-weight: 500;
