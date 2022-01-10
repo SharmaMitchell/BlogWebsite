@@ -13,7 +13,7 @@ a{
 	text-decoration: none;
 }
 .banner{
-	min-height: 30vh;
+	min-height: 40vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
@@ -74,7 +74,7 @@ p{
 	background-color: crimson;
 }
 .brand h1{
-	font-size: 3rem;
+	font-size: 2.5rem;
 	text-transform: uppercase;
 	color: white;
 }
@@ -238,7 +238,7 @@ p{
 #preview h1{
 	display: block;
 	width: fit-content;
-	font-size: 3.5rem;
+	font-size: 3rem;
 	position: relative;
 	color: transparent;
 	animation: text_reveal .5s ease forwards;
@@ -448,6 +448,9 @@ p{
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
+	.brand h1{
+		font-size: 3rem;
+	}
 	h1.section-title {
 		font-size: 6rem;
 	}
