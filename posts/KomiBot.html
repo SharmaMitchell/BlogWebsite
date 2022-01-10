@@ -46,16 +46,24 @@
 		<div class="paragraph container">
 			<div class="col-left">
 				<div class="post-img">
+					<img src="./img/KomiNotes.png" alt="img">
+				</div>
+				<div class="img-div"></div>
+				<div class="post-img">
 					<img src="./img/KomiBot-Profile.png" alt="img">
 				</div>
 				<div class="img-div"></div>
 				<div class="post-img">
 					<img src="./img/KomiBot-Sample-Crop.png" alt="img">
 				</div>
+				<div class="img-div"></div>
+				<div class="post-img">
+					<img src="./img/KomiConvo.png" alt="img">
+				</div>
 			</div>
 			<div class="col-right">
 				<class class="section-title"> The <span>Inspiration</span></class>
-				<p>When I was a beginner in Japanese, I would often shy away from participating in "Japanese-only" chatrooms, since there were many words I didn't understand. I didn't want to pester people by asking them what their sentences meant, but I also didn't want to copy+paste dozens of messages into Google Translate so I could follow the conversation. I thought back on these times as I wondered why the "Japanese-only" chat was so inactive in a Japanese learning Discord server I'm in, and decided to make a bot to help make the chat more accessible to beginners.</p>
+				<p>When I was a beginner in Japanese, I would often shy away from participating in "Japanese-only" chatrooms, since there were many words I didn't understand. I didn't want to pester people by asking them what their sentences meant, but I also didn't want to copy+paste dozens of messages into Google Translate so I could follow the conversation. I thought back on these times as I wondered why the "Japanese-only" chat was so inactive in the Discord server for my university's Japanese club, and decided to make a bot to help make the chat more accessible to beginners.</p>
 				<class class="section-title">The <span>challenges</span></class>
 				<p>I was immediately faced with two challenges: I had never made a discord bot, and I had never used an API. I knew that I needed to use some kind of translation service to process the messages, but I had no idea where to start.</p>
 				<p>I did my research on both creating discord bots, and utilizing APIs, and determined that python would serve me well for both of these purposes. I was already familiar with the language, which saved me the trouble of syntax-related confustion. After reading a few Reddit posts, I discovered that creating Discord bots was more accesible that I had thought - there were libraries full of Discord-specific functions available in multiple different langauges, and incorporating an external API into the mix seemed very approachable. Now that I had my language, and a general idea of how I could implement both a discord bot and a translation function via API, I needed my toolkit. I would need a python library for Discord-specific functions, and a translation API to process translations.</p>
@@ -71,7 +79,8 @@
 				<p>Thinking that the 'alpha' in 'alpha-numeric', and by extension 'isalnum', was in reference to the alphabet, I had assumed that 'isalnum' would evaluate to <b>false</b> if given Japanese text. But I quickly realized that this was not the case, as my Japanese test messages started coming back the same - since they were being sent to DeepL as English to be translated into Japanese. </p>
 				<p>After spending some time on StackOverflow, and deliberating on my options, I decided to implement a check for the input lanugage by using the python function 'isascii()' to determine if the input could be represented by the ascii character set. It wasn't a perfect solution, since emojis and other special characters would cause English input to be sent as Japanese, but it saved me a wasted API call or an additional dependency to check the language, so I figured it was worth the trade-off. Given that the main purpose of the bot is to translate Japanese into English, I'm satisfied with this solution. </p>
 				<class class="section-title">The <span>Payoff</span></class>
-				<p>With my desired features implemented and my bot up-and-running, it was time to exhibit my bot. I excitedly informed the Japanese server I mentioned above that I had made a discord bot that translates, in hopes to help beginners follow the Japanese-only chat. As of writing this I'm currently awaiting approval from the server admins for the bot to join the server, but I have high hopes that KomiBot will be helping people very soon. </p>
+				<p>With my desired features implemented and my bot up-and-running, it was time to exhibit my bot. I excitedly informed the Japanese server I mentioned above that I had made a discord bot that translates, in hopes to help beginners follow the Japanese-only chat. After receiving approval from the server admins, KomiBot was added to an active server with over 80 members.</p>
+				<p>Although it's still too early to judge KomiBot's effectiveness in re-populating the Japanese channel in the server, I'm proud that I was able to create a discord bot despite my lack of experience, and that it's now being used in an active server that I'm a part of.</p>
 				<a href="https://github.com/SharmaMitchell/TranslatorDiscordBot" class="cta">View on GitHub</a>
 			</div>
 		</div>
