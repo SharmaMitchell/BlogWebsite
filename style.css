@@ -289,6 +289,7 @@ p{
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
+
 #recent .recent-item{
 	flex-basis: 80%;
 	display: flex;
@@ -304,20 +305,36 @@ p{
 	position: relative;
 	overflow: hidden;
 }
-#recent .recent-item h2{
+#recent .recent-item .recent-info h2{
 	color: white;
 	font-size: 2rem;
 	text-align: left;
 	margin-bottom: 10px;
 	text-transform: uppercase;
 }
-#recent .recent-item p{
+#recent .recent-item .recent-info h2:hover{
+	text-decoration: underline;
+}
+#recent .recent-item .recent-info p{
 	color: white;
 	text-align: left;
 }
-#recent .recent-item .cta{
+#recent .recent-item .recent-info .cta{
 	font-size: 2rem;
 	padding: 10px 20px;
+}
+#recent .recent-item .recent-img{
+	flex-basis: 50%;
+	overflow: hidden;
+	position: relative;
+	margin: -30px;
+	margin-bottom: 14px;
+}
+#recent .recent-item .recent-img img{
+	transition: .3s ease transform;
+}
+#recent .recent-item .recent-img:hover img{
+	transform: scale(1.05);
 }
 /* End of Recent Section */
 
